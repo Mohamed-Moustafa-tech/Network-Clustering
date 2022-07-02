@@ -29,7 +29,8 @@ class LSOprimizer:
         :param seed: seed
         :param verbose: True/False
         """
-        self.G = nx2gt(G)
+        #self.G = nx2gt(G)
+        self.G = gt.load_graph(G)
         self.T = T
         self.L_min = L_min
         self.L_max = L_max
